@@ -1,0 +1,19 @@
+{
+  "name": "react-webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "A super simple starter kit build for React and Webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelferrell/react-webpack-boilerplate.git"
+  },
+  "author": "Michael Ferrell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelferrell/react-webpack-boilerplate/issues"
+  },
+  "homepage": "https://github.com/michaelferrell/react-webpack-boilerplate#readme"
+}
