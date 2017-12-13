@@ -2,9 +2,14 @@
   "name": "react-webpack-boilerplate",
   "version": "1.0.0",
   "description": "A super simple starter kit build for React and Webpack",
-  "main": "index.js",
+  "main": "dist/main.js",
+  "files": [
+    "dist/"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "demo": "cross-env NODE_ENV=demo webpack -p --display-error-details --progress",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server",
+    "build": "cross-env NODE_ENV=production webpack -p --display-error-details --progress"
   },
   "repository": {
     "type": "git",
@@ -15,5 +20,33 @@
   "bugs": {
     "url": "https://github.com/michaelferrell/react-webpack-boilerplate/issues"
   },
-  "homepage": "https://github.com/michaelferrell/react-webpack-boilerplate#readme"
+  "homepage": "https://github.com/michaelferrell/react-webpack-boilerplate#readme",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-react-html-attrs": "^2.0.0",
+    "babel-plugin-transform-class-properties": "^6.11.5",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-function-bind": "^6.8.0",
+    "babel-plugin-transform-node-env-inline": "^6.8.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "2.28.0",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "react-hot-loader": "^1.3.1",
+    "style-loader": "^0.18.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
+  },
+  "peerDependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
 }
