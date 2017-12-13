@@ -2,16 +2,16 @@
   "name": "react-webpack-boilerplate",
   "version": "1.0.0",
   "description": "A super simple starter kit build for React and Webpack",
-  "main": "dist/main.js",
-  "files": [
-    "dist/"
-  ],
   "author": "Michael Ferrell",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/michaelferrell/react-webpack-boilerplate/issues"
   },
   "homepage": "https://github.com/michaelferrell/react-webpack-boilerplate#readme",
+  "main": "dist/main.js",
+  "files": [
+    "dist/"
+  ],
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
@@ -41,7 +41,6 @@
     "react-dom": "^15.6.1"
   },
   "scripts": {
-    "demo": "cross-env NODE_ENV=demo webpack -p --display-error-details --progress",
     "dev": "cross-env NODE_ENV=development webpack-dev-server",
     "build": "cross-env NODE_ENV=production webpack -p --display-error-details --progress"
   }
