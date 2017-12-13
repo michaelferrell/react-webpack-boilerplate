@@ -6,15 +6,6 @@
   "files": [
     "dist/"
   ],
-  "scripts": {
-    "demo": "cross-env NODE_ENV=demo webpack -p --display-error-details --progress",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server",
-    "build": "cross-env NODE_ENV=production webpack -p --display-error-details --progress"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/michaelferrell/react-webpack-boilerplate.git"
-  },
   "author": "Michael Ferrell",
   "license": "ISC",
   "bugs": {
@@ -48,5 +39,10 @@
   "peerDependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
+  },
+  "scripts": {
+    "demo": "cross-env NODE_ENV=demo webpack -p --display-error-details --progress",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server",
+    "build": "cross-env NODE_ENV=production webpack -p --display-error-details --progress"
   }
 }
